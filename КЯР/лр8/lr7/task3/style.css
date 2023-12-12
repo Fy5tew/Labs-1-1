@@ -1,0 +1,37 @@
+body {
+	text-align: center;
+}
+
+button {
+	margin: 20px;
+	padding: 10px;
+	width: 10%;
+}
+
+button:hover {
+	border: none;
+}
+
+button:nth-of-type(1):hover {
+	color: white;
+	background-color: black;
+}
+
+button:nth-of-type(2):hover {
+	border: 5px solid red;
+	outline: 5px solid yellow;
+}
+
+button:nth-of-type(3):hover {
+	border-top: 5px solid green;
+	border-bottom: 5px solid green;
+}
+
+button:nth-of-type(4):hover {
+	border-right: 5px solid blue;
+	border-left: 5px solid blue;
+}
+
+button:nth-of-type(5):hover {
+	background: radial-gradient(#f5df29 0%, #ff23d9 50%, #09f9f9 80%);
+}

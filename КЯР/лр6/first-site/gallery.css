@@ -1,0 +1,54 @@
+body {
+	background: linear-gradient(45deg, lightgreen, lightblue);
+}
+
+h1 {
+	text-align: center;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin: 50px 0;
+	padding: 5px;
+
+	width: 24%;
+
+	transition: all 0.5s ease-in;
+}
+
+figure img {
+	width: 70%;
+
+	transition: all 0.5s ease-in;
+}
+
+figure figcaption {
+	font-size: 20px;
+	margin-top: 10px;
+
+	transition: all 0.5s ease-in;
+}
+
+
+figure:hover {
+	border: 2px solid red;
+}
+
+figure:hover img {
+	width: 75%;
+}
+
+figure:hover figcaption {
+	color: red;
+}

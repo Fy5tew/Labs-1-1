@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/xsl' href='style.xsl'?>
+<marks>
+    <student>
+        <first-name>Вера</first-name>
+        <last-name>Агеева</last-name>
+        <bap-mark>9</bap-mark>
+        <sdt-mark>9</sdt-mark>
+        <spl-mark>7</spl-mark>
+        <cml-mark>9</cml-mark>
+    </student>
+    <student>
+        <first-name>Артем</first-name>
+        <last-name>Баранцев</last-name>
+        <bap-mark>10</bap-mark>
+        <sdt-mark>7</sdt-mark>
+        <spl-mark>2</spl-mark>
+        <cml-mark>4</cml-mark>
+    </student>
+    <student>
+        <first-name>Антон</first-name>
+        <last-name>Андрусович</last-name>
+        <bap-mark>4</bap-mark>
+        <sdt-mark>4</sdt-mark>
+        <spl-mark>2</spl-mark>
+        <cml-mark>4</cml-mark>
+    </student>
+    <student>
+        <first-name>Алексей</first-name>
+        <last-name>Авдей</last-name>
+        <bap-mark>6</bap-mark>
+        <sdt-mark>6</sdt-mark>
+        <spl-mark>2</spl-mark>
+        <cml-mark>4</cml-mark>
+    </student>
+</marks>

@@ -1,0 +1,37 @@
+*{margin: 0;padding: 0%;border-collapse: collapse;transform-box: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 17px;
+}
+    header{width: 100%;min-height: 4em;height: 9.5vh;position: sticky;top: 0;background-color: #ffe0a6;
+    display: flex;flex-wrap: wrap; justify-content: space-between;align-content: stretch;box-sizing: border-box;}
+    .logo,nav{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 16px;font-style: italic;height: 100%;}
+    .logo{display: block;border: 3px solid #ffe0a6;box-sizing: border-box;flex: 0;}
+    header>nav{flex:1;justify-self: stretch;text-align: center;}
+    article{margin:1% 0.25%  1% 0.25%;overflow: hidden;text-align: justify;max-height: 20vh;}/*9.5em*/
+    
+    img{height: 100%;max-width: 25vh;}
+    body{display: flex;flex-direction: column;min-height: 100vh;}
+    main{flex: 1;width: 95%;margin-left: auto;margin-right: auto;}
+    header>nav>a,header>nav>div{color: black;box-sizing: border-box;min-height: 100%;background-color: #ffc965;display: none;border: 3px solid #ffe0a6;}
+    header>nav>div{display: block;height: 100%;}
+    footer{width: 100%;min-height: 7vh;display: flex;justify-content: space-between;width: 100%;padding-bottom: 1%;
+    background-color: lightgray;margin-top: 1%;
+    }
+
+footer>div{margin: 0 1% 0 1%;height: 100%;}
+footer li{list-style: none;}
+footer li[class]{text-indent: 1.2em;background-repeat: no-repeat;background-size: 1em;background-position:  0 center;}
+.github{background-image: url("../resources/github.png");}
+.facebook{background-image: url("../resources/Facebook_Black.png");}
+.telegram{background-image: url("../resources/telegram-black.png");}
+.vk{background-image: url("../resources/vk-black.png");}
+.youtube{background-image: url("../resources/youtube-black.png");}
+.hide_but{color: green;}
+article img,article figure{float: left;margin:0.5em 1em 0.5em 0.5em;}
+figure img{margin:0;width: 25vh;}/*Компенсатор нестрогой вложенности*/
+figcaption{text-align: center;font-family: Arial, Helvetica, sans-serif;font-size: 14px;}
+article p{margin: 10px 0 10px 0;}
+h1{font-size: 35px;width: 100%;margin-left: auto;margin-right: auto;text-align: center;}
+article h2{font-size: 27px;width: 100%;margin-left: auto;margin-right: auto;text-align: center;}
+article h3{font-size: 22px;width: 100%;margin-left: auto;margin-right: auto;text-align: left;}
+a{text-decoration: none;color: brown;}

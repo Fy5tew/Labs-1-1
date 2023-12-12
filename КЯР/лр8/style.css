@@ -1,0 +1,135 @@
+html, body {
+	height: 100%;
+	margin-top: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+
+	background: linear-gradient(45deg, #00ff00, #00ffdc);
+	background-attachment: fixed;
+}
+
+
+/*Шапка*/
+
+header > h1 {
+	text-align: center;
+}
+
+
+/*Основное содержимое страницы*/
+
+main {
+	display: flex;
+	flex-direction: row;
+	gap: 100px;
+
+	flex-grow: 1;
+
+	font-size: 20px;
+}
+
+p {
+	text-align: justify;
+	line-height: 1.5;
+}
+
+
+/*Навигация*/
+
+nav {
+	text-align: center;
+
+	position: sticky;
+	top: 0;
+}
+
+nav > h3 {
+	white-space: nowrap;
+}
+
+/*Вертикальное меню*/
+nav > ul.vertical-menu {
+	list-style-type: square;
+}
+
+nav > ul.vertical-menu > li {
+	margin: 10px;
+	white-space: nowrap;
+}
+
+/*Выпадающее меню*/
+
+nav > ul.dropdown-menu {
+	list-style-type: none;
+	text-align: left;
+}
+
+nav > ul.dropdown-menu > li {
+	border: 2px solid black;
+	padding: 10px;
+
+	color: #8B0000;
+	background-color: yellow;
+
+	cursor: pointer;
+}
+
+nav > ul.dropdown-menu > ul.dropdown-menu__inner {
+	padding-inline-start: 0px;
+
+	width: 60%;
+
+	list-style-type: none;
+	text-align: left;
+
+	display: none;
+	position: absolute;
+}
+
+nav > ul.dropdown-menu:hover > ul.dropdown-menu__inner {
+	display: block;
+}
+
+nav > ul.dropdown-menu > ul.dropdown-menu__inner > li {
+	border: 2px dashed black;
+	padding: 10px;
+	background-color: rgb(255 160 122);
+}
+
+nav > ul.dropdown-menu > ul.dropdown-menu__inner > li > a {
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+
+
+/*Стили ссылок*/
+
+a:link {
+	color: red;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #8B0000;
+}
+
+a:hover {
+	color: green;
+	text-decoration: underline;
+}
+
+a:active {
+	color: rgb(184, 134, 11);
+}
+
+
+/*Футер*/
+
+footer {
+	text-align: right;
+	font-size: 18px;
+}

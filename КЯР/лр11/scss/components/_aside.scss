@@ -1,0 +1,37 @@
+.aside {
+    @include mixin.flex(column, flex-center, flex-start, $row-gap: var.$page-gap);
+
+    .form {
+        @include mixin.flex(column, center, center, $row-gap: 10px);
+
+        &__header {
+            margin: 0;
+            font-size: var.$aside-header-font-size;
+        }
+
+        &__field {
+            @include mixin.flex(row, center, space-between);
+
+            margin: 0;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        &__controls {
+            @include mixin.flex(row, center, center, $column-gap: 20px);
+        }
+    }
+
+    .section {
+        @include mixin.flex(column, flex-center, flex-start, $row-gap: var.$page-gap);
+        &__header {
+            font-size: var.$aside-header-font-size;
+        }
+
+        &__article {
+            @include mixin.flex(row, center, space-between, $column-gap: 20px);
+
+            font-size: func.get-paragpaph-font-size(var.$aside-header-font-size);
+        }
+    }
+}

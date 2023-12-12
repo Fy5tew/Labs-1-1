@@ -1,0 +1,21 @@
+videos {
+    display: table;
+    margin: 20px;
+}
+
+head, video {
+    display: table-row;
+}
+
+head-title, head-channel, head-link,
+title, channel, link {
+    display: table-cell;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+head > * {
+    font-weight: bold;
+    background: lightslategrey;
+}

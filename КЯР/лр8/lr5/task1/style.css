@@ -1,0 +1,34 @@
+h1 {
+	text-align: center;
+}
+
+table {
+	width: 100%;
+	font-size: 20px;
+
+	border-spacing: 0px;
+	border: 1px solid black;
+}
+
+th, td {
+	padding: 5px;
+	text-align: center;
+
+	border: 1px solid black;
+}
+
+td[rowspan]:not([rowspan="2"]) {
+	writing-mode: vertical-lr;
+	rotate: -180deg;
+
+	width: 20px;
+	background-color: lightgreen;
+}
+
+tr:first-of-type {
+	background-color: pink;
+}
+
+td {
+	background-color: lightblue;
+}

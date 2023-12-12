@@ -1,0 +1,84 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	height: 100%;
+}
+
+.page {
+	padding: 10px;
+	height: 100%;
+	
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 10px;
+
+
+	background-color: #A9C9FF;
+	background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+}
+
+.item {
+	border: 2px solid black;
+	transition: all 0.25s ease;
+}
+
+.item.big {
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+
+.item > figure {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+
+	position: relative;
+
+	overflow: hidden;
+}
+
+.item > figure > img {
+	height: 100%;
+	transition: all 0.5s ease-in-out;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.item > figure > figcaption {
+	font-size: 30px;
+	font-weight: bold;
+	color: transparent;
+	text-align: center;
+	text-transform: uppercase;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	translate: 0 200%;
+
+	transition: all 0.25s ease-in-out;
+}
+
+.item:hover {
+	border-width: 5px;
+	border-image: linear-gradient(45deg, black, tomato) 27;
+}
+
+.item:hover > figure:has(figcaption:not(:empty)) > img {
+	filter: blur(10px);
+}
+
+.item:hover > figure > figcaption {
+	color: tomato;
+	text-shadow: 1px 1px 0px black,
+				 -1px -1px 0px black;
+	translate: 0 0;
+}

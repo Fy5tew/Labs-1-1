@@ -1,0 +1,24 @@
+@use "variables" as var;
+
+
+@function get-paragpaph-font-size($header-font-size) {
+    @return calc($header-font-size / 1.5);
+}
+
+@function get-link-color($state: "none") {
+    @if ($state == "link") {
+        @return var.$link-color;
+    }
+    @else if ($state == "hover") {
+        @return var.$link-hover-color;
+    }
+    @else if ($state == "active") {
+        @return var.$link-active-color;
+    }
+    @else if ($state == "visited") {
+        @return var.$link-visited-color;
+    }
+    @else {
+        @return var.$link-default-color;
+    }
+}

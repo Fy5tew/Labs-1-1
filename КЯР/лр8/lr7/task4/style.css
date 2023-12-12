@@ -1,0 +1,88 @@
+img {
+	width: 300px;
+	height: 300px;
+
+	border: 1px solid black;
+
+	position: absolute;
+}
+
+img:nth-of-type(1) {
+	left: 0px;
+	animation: first-image 3s linear 1s;
+	animation-fill-mode: both;
+}
+
+img:nth-of-type(2) {
+	left: 310px;
+	animation: second-image 3s linear 1s;
+	animation-fill-mode: both;
+}
+
+img:nth-of-type(3) {
+	left: 620px;
+	animation: third-image 3s linear 1s;
+	animation-fill-mode: both;
+}
+
+img:nth-of-type(4) {
+	left: 930px;
+	animation: fourth-image 3s linear 1s;
+	animation-fill-mode: both;
+}
+
+
+@keyframes first-image {
+	0% {
+		left: 0px;
+		rotate: y 60deg
+	}
+	50% {
+		left: 0px;
+		rotate: y 0deg;
+	}
+	100% {
+	}
+}
+
+@keyframes second-image {
+	0% {
+		left: 20px;
+		rotate: y 60deg;
+	}
+	50% {
+		left: 20px;
+		rotate: y 0deg;
+	}
+	100% {
+		filter: blur(10px);
+	}
+}
+
+@keyframes third-image {
+	0% {
+		left: 40px;
+		rotate: y 60deg;
+	}
+	50% {
+		left: 40px;
+		rotate: y 0deg;
+	}
+	100% {
+		filter: grayscale(1);
+	}
+}
+
+@keyframes fourth-image {
+	0% {
+		left: 60px;
+		rotate: y 60deg;
+	}
+	50% {
+		left: 60px;
+		rotate: y 0deg;
+	}
+	100% {
+		filter: invert(1);
+	}
+}

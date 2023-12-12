@@ -1,0 +1,28 @@
+.page-wrapper {
+    height: 100%;
+    max-width: var.$max-width;
+    
+    display: grid;
+    grid-template-areas: "header header"
+                         "main aside"
+                         "footer footer";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1.5fr 10fr 1fr;
+    gap: var.$page-gap;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.footer {
+    grid-area: footer;
+}

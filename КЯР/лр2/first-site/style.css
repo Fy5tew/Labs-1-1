@@ -1,0 +1,26 @@
+h1, h2, h3, h4, h5, h6 {
+	color: purple;
+	font-family: "Monotype Corsiva";
+}
+
+.sub-list#html li {
+	color: red;
+	font-family: "Times New Roman";
+	font-size: 18pt;
+}
+
+.sub-list#css li {
+	color: yellow;
+	font-family: "Times New Roman";
+	font-size: 20pt;
+}
+
+.sub-list#js li {
+	color: green;
+	font-family: "Times New Roman";
+	font-size: 22pt;
+}
+
+table td {
+	background-color: lightblue;
+}

@@ -1,0 +1,39 @@
+p {
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+
+	text-align: justify;
+	overflow-y: hidden;
+
+	animation: text-animate 5s linear; 
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes text-animate {
+	0% {
+		color: red;
+	}
+	15% {
+		color: orange;
+	}
+	30% {
+		color: yellow;
+	}
+	45% {
+		color: green;
+	}
+	60% {
+		color: lightblue;
+	}
+	75% {
+		color: blue;
+	}
+	90% {
+		color: violet;
+	}
+	100% {
+		color: red;
+	}
+}

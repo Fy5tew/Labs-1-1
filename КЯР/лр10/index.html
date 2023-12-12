@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Лабораторная работа №10</title>
+    <link rel="stylesheet" type="text/css" href="css/color-changeble-1280px.css" media="(max-width: 1280px)">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="script.js" defer></script>
+    <style media="(max-width: 480px)">
+        .color-changeble {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Лабораторная работа №10</h1>
+        <div class="menu" data-state="closed" id="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="#videos">Видео</a></li>
+                <li class="menu__item"><a class="menu__link" href="#content">Контент</a></li>
+                <li class="menu__item"><a class="menu__link" href="#music">Музыка</a></li>
+                <li class="menu__item"><a class="menu__link" href="#galery">Галерея</a></li>
+            </ul>
+            <button class="burger" id="menu-button">
+                <span class="burger__content content_open">&#8801;</span>
+                <span class="burger__content content_close">&#9747;</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="columns">
+            <section>
+                <h2 id="videos">Видео</h2>
+                <figure>
+                    <figcaption>
+                        <h3>Start Here</h3>
+                    </figcaption>
+                    <video src="assets/Start Here.mp4#t=0.2" controls></video>
+                </figure>
+                <figure>
+                    <figcaption>
+                        <h3>RDL</h3>
+                    </figcaption>
+                    <video src="assets/RDL.mp4#t=1" controls></video>
+                </figure>
+                <figure>
+                    <figcaption>
+                        <h3>Intro Knee Ankle Foot</h3>
+                    </figcaption>
+                    <video src="assets/Intro Knee Ankle Foot.mp4#t=0.3" controls></video>
+                </figure>
+            </section>
+            <section>
+                <h2 id="content">Flexbox-вёрстка</h2>
+                <p>
+                    <mark>Flexbox-верстка</mark> — разметка макетов веб-страниц, которая позволяет автоматически настраивать ширину элементов, находящихся внутри flex-контейнера. Для применения данного способа разметки следует учитывать разделение применяемых свойств на свойства flex-контейнера и свойства flex-элемента.
+                </p>
+                <p>
+                    С помощью <mark>display: flex;</mark> осуществляется преобразование HTML-элемента в flex-контейнер, а элементы находящийся внутри него в flex-элементы. По умолчанию flex-элементы помещаются друг за другом в одной строке. Свойство <mark>flex-flow</mark> позволяет выбрать направление отображения элементов в контейнере, а также указать их перенос на следующую строку. Первое значение определяет направление, а второе перенос на следующую строку.
+                </p>
+                <p>
+                    Свойство <mark>flex-flow</mark> является сокращенной записью и содержит значения свойств <mark>flex-direction</mark> и <mark>flex-wrap</mark>. Flex-элементы могут размещаться в строке (значение <mark>row</mark>) или в колонке (значение <mark>column</mark>). Перенос элементов осуществляется с помощью значения <mark>wrap</mark>.
+                </p>
+                <p>
+                    Свойство <mark>justify-content</mark> определяет способ выключки flexэлементов в строке. Для выравнивания левому краю используется значения <mark>flex-start</mark>, а по правому краю — <mark>flex-end</mark>. Для равномерного распределения элементов создавая пространство между ними необходимо значение <mark>space-between</mark>, а <mark>space-around</mark> добавляет поля по левому и правому краям крайних элементов.
+                </p>
+                <p>
+                    Свойство <mark>align-items</mark> определяет, как flex-элементы различной высоты будут выровнены по высоте строки в flex-контейнере. Для выравнивания верхнему краю используется значения <mark>flex-start</mark>, а по нижнему краю — <mark>flex-end</mark>. Значение <mark>stretch</mark> позволяет растянуть каждый элемент по высоте контейнера, делая их высоты одинаковыми. Свойство <mark>align-content</mark> определяет как будут размещены flex-элементы, занимающие несколько строк.
+                </p>
+                <p>
+                    Для flex-элементов основным свойством являет <mark>flex</mark>, которое обеспечивает их гибкость и управляет шириной, что позволяет создавать «гибкие» колонки или изменять их ширину в соответствии с размером контейнера, даже если размер неизвестен или меняется динамически. Первое значение свойства <mark>flex</mark> — число параметра <mark>flex-grow</mark>, которое указывает на относительную ширину flex-элемента, которая определяет во сколько размеры элементов отличаются между собой. Второе значение — число свойства <mark>flex-shrink</mark>, которое определяет насколько flex-элемент может быть сжат, если суммарная ширина элементов больше ширины контейнера. Последнее значение — свойство <mark>flex-basis</mark>, которое определяет базовую ширину flex-элемента.
+                </p>
+            </section>
+            <section>
+                <h2 id="music">Музыка</h2>
+                <figure>
+                    <figcaption>
+                        <h3>Miyagi & Эндшпиль - Не теряя</h3>
+                    </figcaption>
+                    <audio src="assets/Miyagi - Эндшпиль-Не теряя.mp3" controls></audio>
+                </figure>
+                <figure>
+                    <figcaption>
+                        <h3>Скриптонит - Чистый</h3>
+                    </figcaption>
+                    <audio src="assets/Скриптонит-Чистый.mp3" controls></audio>
+                </figure>
+                <figure>
+                    <figcaption>
+                        <h3>ЛСП - Вспоминай</h3>
+                    </figcaption>
+                    <audio src="assets/ЛСП-Вспоминай.mp3" controls></audio>
+                </figure>
+            </section>
+        </div>
+        <section>
+            <h2 class="color-changeble" id="galery">Фотогалерея</h2>
+            <div class="galery">
+                <figure>
+                    <img src="assets/cat.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="assets/cat.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="assets/cat.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="assets/cat.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="assets/cat.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="assets/cat.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="assets/cat.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="assets/cat.jpg" alt="">
+                </figure>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

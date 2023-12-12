@@ -1,0 +1,27 @@
+.header {
+    @extend %border-block;
+}
+
+.section {
+    &__header {
+        @extend %border-block;
+    }
+
+    &__article {
+        @extend %border-block;
+        padding: 10px;
+    }
+}
+
+.form {
+    @extend %border-block;
+    padding: 10px;
+}
+
+img {
+    @extend %border-block;
+}
+
+.footer {
+    @extend %border-block;
+}

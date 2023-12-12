@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/css' href='style.css'?>
+<!DOCTYPE videos [
+    <!ELEMENT videos (head, video)>
+
+    <!ELEMENT head (head-title, head-channel, head-link)>
+    <!ELEMENT head-title (#PCDATA)>
+    <!ELEMENT head-channel (#PCDATA)>
+    <!ELEMENT head-link (#PCDATA)>
+    <!ENTITY head-title-text 'Название видео'>
+    <!ENTITY head-channel-text 'Канал'>
+    <!ENTITY head-link-text 'Ссылка'>
+    
+    <!ELEMENT video (title, channel, link)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT channel (#PCDATA)>
+    <!ELEMENT link (#PCDATA)>
+]>
+<videos>
+    <head>
+        <head-title>&head-title-text;</head-title>
+        <head-channel>&head-channel-text;</head-channel>
+        <head-link>&head-link-text;</head-link>
+    </head>
+    <video>
+        <title>ФЕНОМЕН БЕСКОНЕЧНОГО ЛЕТА</title>
+        <channel>IGM</channel>
+        <link>https://www.youtube.com/watch?v=tbgJAShWDIU</link>
+    </video>
+    <video>
+        <title>200 жертв? Отель ужаса? Первый маньяк в истории США [Расследование]</title>
+        <channel>GEO</channel>
+        <link>https://www.youtube.com/watch?v=UdBL6CvSig4</link>
+    </video>
+    <video>
+        <title>ВСПОМНИТЬ ВСЁ [Мифы о нашей памяти]</title>
+        <channel>Utopia Show</channel>
+        <link>https://www.youtube.com/watch?v=e6pa4PX8tJI</link>
+    </video>
+</videos>

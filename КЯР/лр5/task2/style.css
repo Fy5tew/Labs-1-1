@@ -1,0 +1,45 @@
+.wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+table {
+	font-size: 20px;
+	empty-cells: hide;
+}
+
+caption {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+td, th {
+	padding: 10px;
+	color: white;
+	text-align: center;
+	border: 3px solid gray;
+}
+
+th {
+	background-color: darkblue;
+}
+
+tr td:nth-child(1) {
+	color: black;
+	background-color: white;
+}
+
+tr td:nth-child(2) {
+	color: white;
+	background-color: #00BFFF;
+}
+
+tr td:nth-child(3) {
+	color: white;
+	background-color: purple;
+}
+
+tr td:nth-child(4) {
+	color: white;
+	background-color: green;
+}

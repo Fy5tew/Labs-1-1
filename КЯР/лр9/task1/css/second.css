@@ -1,0 +1,10 @@
+.page {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr) 6%;
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+
+.column.fill-rows {
+	grid-row-start: span 2;
+}

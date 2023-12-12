@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Лабораторная работа №11</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="header__logo logo">
+                <img class="logo__image" src="assets/sass-logo.png" alt="SASS">
+            </div>
+            <nav class="menu header__menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Страница 1</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Страница 2</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Страница 3</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Страница 4</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="section" columns="3">
+                <h1 class="section__header">Заголовок</h1>
+                <article class="section__article">
+                    <p>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, ratione, reiciendis consectetur inventore, nihil necessitatibus mollitia laboriosam veniam impedit velit neque explicabo modi commodi soluta numquam dicta doloribus iste a.</span>
+                        <span>Voluptatibus, obcaecati mollitia, corporis, quos fuga eveniet magnam modi nesciunt voluptatum, asperiores nisi tempore commodi suscipit perspiciatis totam. In ipsa sapiente ex quos nesciunt corrupti eius non sequi alias eum?</span>
+                        <span>Assumenda nostrum accusamus reprehenderit dolorem qui, quisquam est molestias quis nisi at nam veniam animi cupiditate in harum sed quaerat eos ea ducimus voluptas explicabo? Dolor cumque perspiciatis perferendis molestias?</span>
+                    </p>
+                </article>
+                <article class="section__article">
+                    <p>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum deleniti quod nisi, molestias modi maiores hic corrupti officiis impedit necessitatibus ipsam eos culpa, sapiente esse in! Doloribus, architecto error amet!</span>
+                        <span>Voluptatibus cumque dolorum animi. Rerum aliquam sapiente ab pariatur omnis dignissimos provident tenetur numquam perspiciatis voluptatem nihil quia, amet ad deserunt vel nulla, architecto exercitationem consequuntur totam accusantium dolorem, accusamus?</span>
+                        <span>Pariatur ea, totam saepe quidem omnis, accusantium animi dolorem obcaecati quae porro, nemo quas eius. Officiis debitis temporibus nesciunt illo porro, sunt quis ut aliquid doloremque ipsam qui doloribus possimus.</span>
+                    </p>
+                </article>
+                <article class="section__article">
+                    <p>
+                        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, veniam vitae iure facere sequi dolor quas veritatis laborum velit assumenda, id nemo consequuntur in corporis, suscipit nostrum aspernatur illum cumque.</span>
+                        <span>Nesciunt, perspiciatis laborum accusantium molestias ullam dolore hic et labore a dicta vel delectus earum quo animi itaque aliquam quidem iusto eaque, facilis sapiente perferendis quos, neque atque. Qui, eos?</span>
+                        <span>Doloremque iure cupiditate voluptate ratione fuga. Numquam, quia, id unde exercitationem soluta totam. Voluptatibus, quae quia. Corrupti eveniet harum veniam quibusdam, commodi vitae asperiores. Ratione dolor quo repellat, libero ex?</span>
+                    </p>
+                </article>
+            </section>
+            <section class="section" columns="4">
+                <h1 class="section__header">Заголовок</h1>
+                <figure><img src="assets/cat.jpg" alt="Котик"></figure>
+                <figure><img src="assets/cat.jpg" alt="Котик"></figure>
+                <figure><img src="assets/cat.jpg" alt="Котик"></figure>
+                <figure><img src="assets/cat.jpg" alt="Котик"></figure>
+            </section>
+        </main>
+        <aside class="aside">
+            <section class="section">
+                <form class="form" onsubmit="alert('Ваше сообщение отправлено!');">
+                    <h3 class="form__header">Обратная связь</h3>
+                    <p class="form__field">
+                        <label class="form__label" for="first_name">Имя: </label>
+                        <input class="form__input" type="text" name="first_name" required>
+                    </p>
+                    <p class="form__field">
+                        <label class="form__label" for="last_name">Фамилия: </label>
+                        <input class="form__input" type="text" name="last_name" required>
+                    </p>
+                    <p class="form__field">
+                        <label class="form__label" for="email">Email: </label>
+                        <input class="form__input" type="email" name="email" required>
+                    </p>
+                    <p class="form__field">
+                        <label class="form__label" for="text">Пожелания: </label>
+                        <textarea class="form__input" name="text" required></textarea>
+                    </p>
+                    <p class="form__field form__controls">
+                        <input class="form__button" type="submit" value="Отправить">
+                        <input class="form__button" type="reset" name="Сбросить">
+                    </p>
+                </form>
+            </section>
+            <section class="section">
+                <h2 class="section__header">Заголовок</h2>
+                <article class="section__article">
+                    <figure>
+                        <img src="assets/cat.jpg" alt="Котик">
+                    </figure>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Neque, illum vero reiciendis ex optio dignissimos nostrum minima tempora pariatur soluta iure ratione facere at vel quod similique nesciunt quasi! Fugiat.
+                    </p>
+                </article>
+                <article class="section__article">
+                    <figure>
+                        <img src="assets/cat.jpg" alt="Котик">
+                    </figure>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Neque, illum vero reiciendis ex optio dignissimos nostrum minima tempora pariatur soluta iure ratione facere at vel quod similique nesciunt quasi! Fugiat.
+                    </p>
+                </article>
+            </section>
+        </aside>
+        <footer class="footer">
+            <span>Турчинович Никита Александрович, ФИТ 1-2, 1 подгруппа</span>
+            <span>nikturchinovich@mail.ru</span>
+        </footer>
+    </div>
+</body>
+</html>

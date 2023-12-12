@@ -1,0 +1,42 @@
+.block-wrapper {
+	display: flex;
+	flex-direction: row;
+
+	justify-content: center;
+}
+
+.block {
+	margin: 15px;
+	padding: 15px;
+	margin-top: 30px;
+
+	font-size: 40px;
+}
+
+.block:nth-of-type(1) {
+	border: 10px outset rgb(254 0 0);
+}
+
+.block:nth-of-type(2) {
+	border: 10px dashed rgb(0 255 0);
+}
+
+.block:nth-of-type(3) {
+	border: 10px dotted rgb(1 0 246);
+}
+
+.block:nth-of-type(4) {
+	border: 10px double rgb(3 251 255);
+}
+
+.block:nth-of-type(5) {
+	border: 10px groove rgb(254 0 254);
+}
+
+.block:nth-of-type(6) {
+	border: 10px inset rgb(255 255 0);
+}
+
+.block:nth-of-type(7) {
+	border: 10px solid rgb(0 0 0);
+}

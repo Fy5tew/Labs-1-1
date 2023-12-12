@@ -1,0 +1,24 @@
+p span {
+	display: inline-block;
+	margin: 5px;
+	padding: 5px;
+	background-color: #FFA500;
+	border: 3px solid #FF4500;
+}
+
+p:nth-of-type(1) {
+	width: 400px;
+	text-align: center;
+	border: 3px solid #FF7F50;
+}
+
+p:nth-of-type(2) {
+	border: 5px solid red;
+	border-radius: 20px/40px;
+	box-shadow: inset 2px 2px 8px 8px rgba(0,0,0,.5);
+	overflow: auto;
+}
+
+P:nth-of-type(3) {
+	border: 3px solid #FF6347;
+}

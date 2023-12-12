@@ -1,0 +1,5 @@
+.footer {
+    @include mixin.flex(column, center, center);
+
+    padding: 10px;
+}

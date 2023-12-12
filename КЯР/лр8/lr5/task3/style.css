@@ -1,0 +1,55 @@
+.wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+form {
+	width: 500px;
+	padding: 0 30px 30px 30px;
+	border-radius: 25px;
+
+	color: white;
+	background-color: indigo;
+}
+
+.options {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0 20px 0;
+}
+
+.controls {
+	display: flex;
+	justify-content: flex-end;
+}
+
+label, input, select {
+	font-size: 1.2em;
+}
+
+input, select {
+	padding: 4px;
+	border-radius: 5px;
+}
+
+input[type="radio"] {
+	font-size: 40px;
+}
+
+input[type="text"]:focus {
+	color: darkviolet;
+	background-color: pink;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+	background-color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 1);
+	box-shadow: inset 0 0 10px rgba(255,255,255, .75);
+}
+
+input[type="submit"], input[type="reset"] {
+	margin: 0 2px 0 2px;
+	color: white;
+	background-color: navy;
+	box-shadow: 0 0 4px white;
+}

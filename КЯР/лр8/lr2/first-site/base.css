@@ -1,0 +1,50 @@
+.title {
+	text-align: center;
+}
+
+.icon {
+	width: 20px;
+}
+
+p span {
+	font-weight: 900;
+}
+
+#main-list {
+	font-size: 20px;
+}
+
+.sub-list#html {
+	list-style-type: disc;
+}
+
+.sub-list#css {
+	list-style-type: circle;
+}
+
+.sub-list#js {
+	list-style-type: square;
+}
+
+.table-wrapper {
+	overflow-x: auto;
+}
+
+table {
+	border-spacing: 0px;
+	margin: 20px;
+}
+
+th {
+	background: lightgrey;
+}
+
+td {
+	text-align: center;
+	width: 10%;
+	padding: 10px;
+}
+
+.img-container {
+	text-align: center;
+}

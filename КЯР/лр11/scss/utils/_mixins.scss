@@ -1,0 +1,14 @@
+@mixin flex($direction, $align-items, $justify-content, $wrap: nowrap, $row-gap: inherit, $column-gap: inherit) {
+    display: flex;
+    flex-flow: $direction $wrap;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    row-gap: $row-gap;
+    column-gap: $column-gap;
+}
+
+@mixin flex-columns($count) {
+    > * {
+        width: calc(90% / $count);
+    }
+}

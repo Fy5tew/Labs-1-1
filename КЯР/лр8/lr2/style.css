@@ -1,0 +1,42 @@
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+} 
+
+nav {
+
+}
+
+nav > ul {
+	padding-inline-start: 0px;
+
+	list-style-type: none;
+}
+
+nav > ul > li {
+	display: inline-block;
+}
+
+nav > ul > li > a {
+	display: inline-block;
+
+	padding: 10px;
+
+	border: 2px solid green;
+	background-color: yellow;
+	color: green;
+
+	font-size: 20px;
+
+	text-decoration: none;
+}
+
+nav > ul > li > a:not(:last-child) {
+	border-right-width: 0px;
+}
+
+nav > ul > li:hover > a {
+	background-color: greenyellow;
+}

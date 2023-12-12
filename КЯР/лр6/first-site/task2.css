@@ -1,0 +1,18 @@
+img.float {
+	margin: 5px;
+	height: 220px;
+}
+
+img.float.left {
+	float: left;
+}
+
+img.float.right {
+	float: right;
+}
+
+a.float ~ p {
+	margin: 0;
+	text-indent: 30px;
+	font-size: 23px;
+}

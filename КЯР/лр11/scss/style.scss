@@ -1,0 +1,13 @@
+@use "utils/variables" as var;
+@use "utils/functions" as func;
+@use "utils/templates" as templ;
+@use "utils/mixins" as mixin;
+
+@import "styles/common";
+@import "styles/page";
+@import "styles/blocks";
+
+@import "components/header";
+@import "components/main";
+@import "components/aside";
+@import "components/footer";

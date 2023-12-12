@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/css' href='style.css'?>
+<videos xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='video.xsd'>
+    <head>
+        <head-title>Название видео</head-title>
+        <head-channel>Канал</head-channel>
+        <head-link>Ссылка</head-link>
+    </head>
+    <video>
+        <title>ФЕНОМЕН БЕСКОНЕЧНОГО ЛЕТА</title>
+        <channel>IGM</channel>
+        <link>https://www.youtube.com/watch?v=tbgJAShWDIU</link>
+    </video>
+    <video>
+        <title>200 жертв? Отель ужаса? Первый маньяк в истории США [Расследование]</title>
+        <channel>GEO</channel>
+        <link>https://www.youtube.com/watch?v=UdBL6CvSig4</link>
+    </video>
+    <video>
+        <title>ВСПОМНИТЬ ВСЁ [Мифы о нашей памяти]</title>
+        <channel>Utopia Show</channel>
+        <link>https://www.youtube.com/watch?v=e6pa4PX8tJI</link>
+    </video>
+</videos>

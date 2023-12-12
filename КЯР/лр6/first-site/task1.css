@@ -1,0 +1,28 @@
+body {
+	background-image: url("assets/fit.jpg");
+	background-repeat: no-repeat;
+	background-size: 150px;
+	background-position: right top;
+	background-attachment: fixed;
+}
+
+ul li {
+	list-style: none;
+	background-repeat: no-repeat;
+	background-size: 15px;
+	background-position: 0 4px;
+	padding-left: 25px;
+	margin-bottom: 10px;
+}
+
+ul#html li {
+	background-image: url(assets/html-icon.png);
+}
+
+ul#css li {
+	background-image: url(assets/css-icon.png);
+}
+
+ul#js li {
+	background-image: url(assets/js-icon.png);
+}

@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\Education\1 Курс\1 Семестр\ОАиП\лр3\LR3\Turchinovich3\main.cpp(94,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Turchinovich3.vcxproj -> D:\Education\1 Курс\1 Семестр\ОАиП\лр3\LR3\Debug\Turchinovich3.exe

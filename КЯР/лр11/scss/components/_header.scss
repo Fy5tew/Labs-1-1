@@ -1,0 +1,58 @@
+.header {
+    @include mixin.flex(row, center, space-between);
+
+    padding: 5px 10px;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+    &__menu {
+        width: 100%;
+        max-width: 60%;
+    }
+}
+
+.logo {
+    width: 10%;
+    
+    &__image {
+        border: none;
+    }
+}
+
+.menu {
+    &__list {
+        @include mixin.flex(row, center, space-between);
+
+        margin: 0;
+        padding: 0;
+
+        list-style-type: none;
+    }
+
+    &__item {
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #f7f1f1;
+        padding: 5px 20px;
+    }
+
+    &__link {
+        text-decoration: none;
+
+        &:link {
+            color: func.get-link-color("link");
+        }
+
+        &:visited {
+            color: func.get-link-color("visited");
+        }
+
+        &:hover {
+            color: func.get-link-color("hover");
+        }
+
+        &:active {
+            color: func.get-link-color("active");
+        }
+    }
+}

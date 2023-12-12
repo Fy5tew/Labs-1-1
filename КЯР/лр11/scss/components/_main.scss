@@ -1,0 +1,22 @@
+.main {
+    .section {
+        @include mixin.flex(row, stretch, space-between, wrap, $column-gap: var.$page-gap, $row-gap: var.$page-gap);
+
+        &[columns="3"] {
+            @include mixin.flex-columns(3);
+        }
+
+        &[columns="4"] {
+            @include mixin.flex-columns(4);
+        }
+
+        &__header {
+            min-width: 100%;
+            font-size: var.$main-header-font-size;
+        }
+
+        &__article {
+            font-size: func.get-paragpaph-font-size(var.$main-header-font-size);
+        }
+    }
+}

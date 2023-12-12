@@ -1,0 +1,270 @@
+html, body {
+	margin: 0;
+	height: 100%;
+}
+
+h1 {
+	margin: 0;
+}
+
+
+.wrapper {
+	perspective: 500px;
+
+	margin-top: 200px;
+	width: 100%;
+
+	position: relative;
+}
+
+img {
+	box-sizing: border-box;
+	width: 300px;
+	height: 300px;
+	margin: 0;
+	border: 5px solid black;
+
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+img:nth-of-type(1) {
+	border-left-color: red;
+	border-right-color: orange;
+
+	animation: first-image 10s linear;
+	animation-iteration-count: infinite;
+	animation-fill-mode: backwards;
+}
+
+img:nth-of-type(2) {
+	border-left-color: orange;
+	border-right-color: yellow;
+
+	animation: second-image 10s linear;
+	animation-iteration-count: infinite;
+	animation-fill-mode: backwards;
+}
+
+img:nth-of-type(3) {
+	border-left-color: yellow;
+	border-right-color: green;
+
+	animation: third-image 10s linear;
+	animation-iteration-count: infinite;
+	animation-fill-mode: backwards;
+}
+
+img:nth-of-type(4) {
+	border-left-color: green;
+	border-right-color: blue;
+
+	animation: fourth-image 10s linear;
+	animation-iteration-count: infinite;
+	animation-fill-mode: backwards;
+}
+
+img:nth-of-type(5) {
+	border-left-color: blue;
+	border-right-color: red;
+
+	animation: fifth-image 10s linear;
+	animation-iteration-count: infinite;
+	animation-fill-mode: backwards;
+}
+
+
+@keyframes first-image {
+	0% {
+		rotate: y -90deg;
+		translate: -430px;
+		transform-origin: right;
+		opacity: 0;
+	}
+	20% {
+		rotate: y -45deg;
+		translate: -300px;
+		transform-origin: right;
+		opacity: 100%;
+	}
+	40% {
+		rotate: y 0deg;
+		translate: 0px;
+		opacity: 100%;
+	}
+	60% {
+		rotate: y 45deg;
+		translate: 300px;
+		transform-origin: left;
+		opacity: 100%;
+	}
+	70% {
+		opacity: 0;
+	}
+	80% {
+		rotate: y 90deg;
+		translate: 300px;
+		transform-origin: left;
+		opacity: 0;
+	}
+	100% {
+		rotate: y -90deg;
+		translate: -430px;
+		transform-origin: right;
+		opacity: 0;
+	}
+}
+
+@keyframes second-image {
+	0% {
+		rotate: y -45deg;
+		translate: -300px;
+		transform-origin: right;
+	}
+	20% {
+		rotate: y 0deg;
+		translate: 0px;
+		opacity: 100%;
+	}
+	40% {
+		rotate: y 45deg;
+		translate: 300px;
+		transform-origin: left;
+		opacity: 100%;
+	}
+	50% {
+		opacity: 0%;
+	}
+	60% {
+		rotate: y 90deg;
+		translate: 300px;
+		transform-origin: left;
+		opacity: 0;
+	}
+	80% {
+		rotate: y -90deg;
+		translate: -300px;
+		transform-origin: right;
+		opacity: 0;
+	}
+	100% {
+		rotate: y -45deg;
+		translate: -300px;
+		transform-origin: right;
+	}
+}
+
+@keyframes third-image {
+	0% {
+		rotate: y 0deg;
+		translate: 0px;
+		opacity: 100%;
+	}
+	20% {
+		rotate: y 45deg;
+		translate: 300px;
+		transform-origin: left;
+		opacity: 100%;
+	}
+	30% {
+		opacity: 0%;
+	}
+	40% {
+		rotate: y 90deg;
+		translate: 300px;
+		transform-origin: left;
+		opacity: 0;
+	}
+	60% {
+		rotate: y -90deg;
+		translate: -300px;
+		transform-origin: right;
+		opacity: 0;
+	}
+	80% {
+		rotate: y -45deg;
+		translate: -300px;
+		transform-origin: right;
+	}
+	100% {
+		rotate: y 0deg;
+		translate: 0px;
+		opacity: 100%;
+	}
+}
+
+@keyframes fourth-image {
+	0% {
+		rotate: y 45deg;
+		translate: 300px;
+		transform-origin: left;
+	}
+	20% {
+		rotate: y 90deg;
+		translate: 300px;
+		transform-origin: left;
+		opacity: 0;
+	}
+	40% {
+		rotate: y -90deg;
+		translate: -300px;
+		transform-origin: right;
+		opacity: 0;
+	}
+	60% {
+		rotate: y -45deg;
+		translate: -300px;
+		transform-origin: right;
+	}
+	80% {
+		rotate: y 0deg;
+		translate: 0px;
+		opacity: 100%;
+	}
+	100% {
+		rotate: y 45deg;
+		translate: 300px;
+		transform-origin: left;
+		opacity: 100%;
+	}
+}
+
+@keyframes fifth-image {
+	0% {
+		rotate: y 90deg;
+		translate: 430px;
+		transform-origin: left;
+		opacity: 0;
+	}
+	20% {
+		rotate: y -90deg;
+		translate: -300px;
+		transform-origin: right;
+		opacity: 0;
+	}
+	40% {
+		rotate: y -45deg;
+		translate: -300px;
+		transform-origin: right;
+	}
+	60% {
+		rotate: y 0deg;
+		translate: 0px;
+		opacity: 100%;
+	}
+	80% {
+		rotate: y 45deg;
+		translate: 300px;
+		transform-origin: left;
+		opacity: 100%;
+	}
+	100% {
+		rotate: y 90deg;
+		translate: 430px;
+		transform-origin: left;
+		opacity: 0;
+	}
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Задание №3</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<form>
+			<h2>Регистрация постоянного клиента</h2>
+			<div class="options">
+				<label for="lastName">Фамилия:</label>
+				<input type="text" name="lastName" required>
+			</div>
+			<div class="options">
+				<label for="firstName">Имя:</label>
+				<input type="text" name="firstName" required>
+			</div>
+			<div class="options">
+				<label for="patronymic">Отчество:</label>
+				<input type="text" name="patronymic">
+			</div>
+			<div class="options">
+				<label for="age">Ваш возраст:</label>
+				<input type="number" name="age" min="0" required>
+			</div>
+			<div class="options">
+				<label for="gender">Пол:</label>
+				<div class="radio-set">
+					<label>
+						<input type="radio" name="gender" value="male">
+						Мужской
+					</label>
+					<label>
+						<input type="radio" name="gender" value="female">
+						Женский
+					</label>
+				</div>
+			</div>
+			<div class="options">
+				<label for="email">Email:</label>
+				<input type="email" name="email" required>
+			</div>
+			<div class="options">
+				<label for="country">Страна проживания:</label>
+				<input type="text" name="country" required>
+			</div>
+			<div class="options">
+				<label for="recomendation">Откуда вы узнали о нас?</label>
+				<select name="recomendation">
+					<option value="" disabled selected>Выберите вариант</option>
+					<option value="relatives">От родственников</option>
+					<option value="friends">От друзей</option>
+					<option value="internet">В интернете</option>
+					<option value="tv">По телевизору</option>
+				</select>
+			</div>
+			<div class="options">
+				<label for="date">Дата заполнения</label>
+				<input type="date" name="date" required>
+			</div>
+			<div class="controls">
+				<input type="submit" value="Регистрация">
+				<input type="reset" value="Отмена">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
